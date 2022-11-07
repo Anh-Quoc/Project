@@ -1,0 +1,342 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta http-equiv="X-UA-Compatible" content="IE=Edge" /><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" /><title>
+	View Schedule
+</title><link rel="Stylesheet" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css" type="text/css" /><link rel="Stylesheet" href="../fu.css" type="text/css" /><link rel="Stylesheet" href="../JavaScript/jquery.css" type="text/css" /><link rel="Stylesheet" href="../JavaScript/jquery-ui.css" type="text/css" /><link rel="Stylesheet" href="../JavaScript/jquery.alerts.css" type="text/css" />
+    
+    <script src="../JavaScript/jquery.min.js" type="text/javascript"></script>
+
+    <script src="../JavaScript/jquery_002.js" type="text/javascript"></script>
+
+    <script src="../JavaScript/jquery_003.js" type="text/javascript"></script>
+
+    <script src="../JavaScript/jquery.js" type="text/javascript"></script>
+
+    <script src="../JavaScript/jquery-1.8.3.js" type="text/javascript"></script>
+
+    <script src="../JavaScript/jquery-ui.js" type="text/javascript"></script>
+
+    <script src="../JavaScript/jquery.alerts.js" type="text/javascript"></script>
+    
+    <link rel="Stylesheet" href="../Content/bootstrap.css" type="text/css" /><link rel="Stylesheet" href="../Content/bootstrap.min.css" type="text/css" /><link rel="Stylesheet" href="../Content/bootstrap-theme.min.css" type="text/css" />
+
+    <style type="text/css">
+        .style1 {
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-8">
+
+                <h1><span>FPT University Academic Portal</span>
+                </h1>
+
+            </div>
+            <div class="col-md-4">
+                <table>
+                    <tr>
+                        <td colspan="2" class="auto-style1"><strong>FAP mobile app (myFAP) is ready at</strong></td>
+
+                    </tr>
+                    <tr>
+                        <td><a href="https://apps.apple.com/app/id1527723314">
+                            <img src="https://fap.fpt.edu.vn/images/app-store.svg" style="width: 120px; height: 40px" alt="apple store" /></a></td>
+                        <td><a href="https://play.google.com/store/apps/details?id=com.fuct">
+                            <img src="https://fap.fpt.edu.vn/images/play-store.svg" style="width: 120px; height: 40px" alt="google store" /></a></td>
+
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <form name="aspnetForm" method="post" action="./ScheduleOfWeek.aspx" id="aspnetForm">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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PSdjZW50ZXInPjI2LzAzPC90aD48dGggIGFsaWduPSdjZW50ZXInPjI3LzAzPC90aD5kAg0PFgIfBQXHEjx0cj48dGQ+U2xvdCAxIDwvdGQ+PHRkPi08L3RkPjx0ZD4tPC90ZD48dGQ+LTwvdGQ+PHRkPi08L3RkPjx0ZD4tPC90ZD48dGQ+LTwvdGQ+PHRkPi08L3RkPjwvdHI+PHRyPjx0ZD5TbG90IDIgPC90ZD48dGQ+LTwvdGQ+PHRkPi08L3RkPjx0ZD4tPC90ZD48dGQ+LTwvdGQ+PHRkPi08L3RkPjx0ZD4tPC90ZD48dGQ+LTwvdGQ+PC90cj48dHI+PHRkPlNsb3QgMyA8L3RkPjx0ZD4tPC90ZD48dGQ+LTwvdGQ+PHRkPi08L3RkPjx0ZD4tPC90ZD48dGQ+LTwvdGQ+PHRkPi08L3RkPjx0ZD4tPC90ZD48L3RyPjx0cj48dGQ+U2xvdCA0IDwvdGQ+PHRkPi08L3RkPjx0ZD4tPC90ZD48dGQ+LTwvdGQ+PHRkPi08L3RkPjx0ZD4tPC90ZD48dGQ+LTwvdGQ+PHRkPi08L3RkPjwvdHI+PHRyPjx0ZD5TbG90IDUgPC90ZD48dGQ+PGEgaHJlZj0nLi4vU2NoZWR1bGUvQWN0aXZpdHlEZXRhaWwuYXNweD9pZD04ODI3MjEnPlZPVjEyNC08YSBjbGFzcz0nbGFiZWwgbGFiZWwtd2FybmluZycgaHJlZj0naHR0cDovL2ZsbS5mcHQuZWR1LnZuL2d1aS9yb2xlL2d1ZXN0L0xpc3RTY2hlZHVsZVN5bGxhYnVzP3N1YmplY3RDb2RlPXJLNnVjVXpJSmhWTnhHcG1rN09yeWc9PSZTZXNzaW9uTm89UmtpYkdFRVM5TWVyZXZWQ1ZuNzJpUT09JyB0YXJnZXQ9J19ibGFuayc+VmlldyBNYXRlcmlhbHM8L2E+PGJyLz4gYXQgUjIyIDxhID4gPGJyLz4oPGZvbnQgY29sb3I9R3JlZW4+YXR0ZW5kZWQ8L2ZvbnQ+KTxici8+PC90ZD48dGQ+PGEgaHJlZj0nLi4vU2NoZWR1bGUvQWN0aXZpdHlEZXRhaWwuYXNweD9pZD04ODI3MjInPlZPVjEyNC08YSBjbGFzcz0nbGFiZWwgbGFiZWwtd2FybmluZycgaHJlZj0naHR0cDovL2ZsbS5mcHQuZWR1LnZuL2d1aS9yb2xlL2d1ZXN0L0xpc3RTY2hlZHVsZVN5bGxhYnVzP3N1YmplY3RDb2RlPXJLNnVjVXpJSmhWTnhHcG1rN09yeWc9PSZTZXNzaW9uTm89aTEwamhVUVA4SHh6YXIrNEdWZkJUdz09JyB0YXJnZXQ9J19ibGFuayc+VmlldyBNYXRlcmlhbHM8L2E+PGJyLz4gYXQgUjIyIDxhID4gPGJyLz4oPGZvbnQgY29sb3I9R3JlZW4+YXR0ZW5kZWQ8L2ZvbnQ+KTxici8+PC90ZD48dGQ+PGEgaHJlZj0nLi4vU2NoZWR1bGUvQWN0aXZpdHlEZXRhaWwuYXNweD9pZD04ODI3MjMnPlZPVjEyNC08YSBjbGFzcz0nbGFiZWwgbGFiZWwtd2FybmluZycgaHJlZj0naHR0cDovL2ZsbS5mcHQuZWR1LnZuL2d1aS9yb2xlL2d1ZXN0L0xpc3RTY2hlZHVsZVN5bGxhYnVzP3N1YmplY3RDb2RlPXJLNnVjVXpJSmhWTnhHcG1rN09yeWc9PSZTZXNzaW9uTm89aVU2WHNCQW04Z0tTVnEwekd3UGk3QT09JyB0YXJnZXQ9J19ibGFuayc+VmlldyBNYXRlcmlhbHM8L2E+PGJyLz4gYXQgUjIyIDxhID4gPGJyLz4oPGZvbnQgY29sb3I9R3JlZW4+YXR0ZW5kZWQ8L2ZvbnQ+KTxici8+PC90ZD48dGQ+PGEgaHJlZj0nLi4vU2NoZWR1bGUvQWN0aXZpdHlEZXRhaWwuYXNweD9pZD04ODI3MjQnPlZPVjEyNC08YSBjbGFzcz0nbGFiZWwgbGFiZWwtd2FybmluZycgaHJlZj0naHR0cDovL2ZsbS5mcHQuZWR1LnZuL2d1aS9yb2xlL2d1ZXN0L0xpc3RTY2hlZHVsZVN5bGxhYnVzP3N1YmplY3RDb2RlPXJLNnVjVXpJSmhWTnhHcG1rN09yeWc9PSZTZXNzaW9uTm89OGxBWFNVNGxDTExVWlg3LzFmTDk3Zz09JyB0YXJnZXQ9J19ibGFuayc+VmlldyBNYXRlcmlhbHM8L2E+PGJyLz4gYXQgUjIyIDxhID4gPGJyLz4oPGZvbnQgY29sb3I9R3JlZW4+YXR0ZW5kZWQ8L2ZvbnQ+KTxici8+PC90ZD48dGQ+PGEgaHJlZj0nLi4vU2NoZWR1bGUvQWN0aXZpdHlEZXRhaWwuYXNweD9pZD04ODI3NDEnPlZPVjEyNC08YSBjbGFzcz0nbGFiZWwgbGFiZWwtd2FybmluZycgaHJlZj0naHR0cDovL2ZsbS5mcHQuZWR1LnZuL2d1aS9yb2xlL2d1ZXN0L0xpc3RTY2hlZHVsZVN5bGxhYnVzP3N1YmplY3RDb2RlPXJLNnVjVXpJSmhWTnhHcG1rN09yeWc9PSZTZXNzaW9uTm89WVBWN3MwTHVzUXB5aEE3QlNHb3Y5dz09JyB0YXJnZXQ9J19ibGFuayc+VmlldyBNYXRlcmlhbHM8L2E+PGJyLz4gYXQgUjIyIDxhID4gPGJyLz4oPGZvbnQgY29sb3I9R3JlZW4+YXR0ZW5kZWQ8L2ZvbnQ+KTxici8+PC90ZD48dGQ+LTwvdGQ+PHRkPi08L3RkPjwvdHI+PHRyPjx0ZD5TbG90IDYgPC90ZD48dGQ+LTwvdGQ+PHRkPi08L3RkPjx0ZD4tPC90ZD48dGQ+LTwvdGQ+PHRkPi08L3RkPjx0ZD4tPC90ZD48dGQ+LTwvdGQ+PC90cj48dHI+PHRkPlNsb3QgNyA8L3RkPjx0ZD4tPC90ZD48dGQ+LTwvdGQ+PHRkPi08L3RkPjx0ZD4tPC90ZD48dGQ+LTwvdGQ+PHRkPi08L3RkPjx0ZD4tPC90ZD48L3RyPjx0cj48dGQ+U2xvdCA4IDwvdGQ+PHRkPi08L3RkPjx0ZD4tPC90ZD48dGQ+LTwvdGQ+PHRkPi08L3RkPjx0ZD4tPC90ZD48dGQ+LTwvdGQ+PHRkPi08L3RkPjwvdHI+ZAIPDxYCHwUF3gI8dWw+PGxpPig8Zm9udCBjb2xvcj0nZ3JlZW4nPmF0dGVuZGVkPC9mb250Pik6IFF1b2NIQUhFMTc2Njk1IGhhZCBhdHRlbmRlZCB0aGlzIGFjdGl2aXR5IC8gSG/DoG5nIEFuaCBRdeG7kWMgxJHDoyB0aGFtIGdpYSBob+G6oXQgxJHhu5luZyBuw6B5PC9saT48bGk+KDxmb250IGNvbG9yPSdyZWQnPmFic2VudDwvZm9udD4pOiBRdW9jSEFIRTE3NjY5NSBoYWQgTk9UIGF0dGVuZGVkIHRoaXMgYWN0aXZpdHkgLyBIb8OgbmcgQW5oIFF14buRYyDEkcOjIHbhuq9uZyBt4bq3dCBideG7lWkgbsOgeTwvbGk+ICAgPGxpPigtKTogbm8gZGF0YSB3YXMgZ2l2ZW4gLyBjaMawYSBjw7MgZOG7ryBsaeG7h3U8L2xpPiA8L3VsPmQCBw8WAh8AZ2RkRAjFCOjJLEb4DamdT3OV2TN+9J9LRPgm8UnwZzRODC8=" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="D5FDD5A8" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdADoVn8Q3b6ujxLz+RlF8PjvErWCyrTvhja6OsgsDxOjYlsPbrs0M9H1EydjTxJ0V+Vr2Apjxie6lWUWWqazOMDQqy4h0ifhAeGhA2+tYuqG7WlhIjK/ryS3afOfp5Fzohkww2qxSZIdF7Gq8wMvAdB6jopk3G9v4qJRWCnvqgyIBIEAGZz0ydeMzBbOVjvtSceNuYO+Nq77CcujVsrydX9ZPQ7qgG3Eknbhhk2VxJwo5e7dW8cETAwYzP5bR9v9aiz39Zc4lWU1bBofP0LDsEC4q1AL+4swz4xh1r9HMbXRcss3n3wMQmEjJxs2/J0mvheDOhCU/14CEHBFUfuFXVg3C1Ip2zyXqvBU9NgIjKkVQH1TEGfRtnnWmYrE6Hqjw0WuDQOPzDEtdZFaAiEbDzw+dHfYIjiuB+/ZJ8ItmEOxmhV4Z/+puuANlipTV2WkdXRYFLTpIjBqisYlAxEljxyfq+/DsuNxt1Xn0CYq8lFAl7ep6vM4GN0gjcjSbx+VFzxSxMUrEbmg4n1598URBtMcRxIn8v9qWajDnAuISu4hzhih4JAb4Dqceho8sAhBotQYDtn4emlZYLKUTbNgWG6jb4H1zuH+WDl4VviZMYmYlf44v3fY9bqvdAWUUNoby/K9HGBg8aUu2hU5mg9vQd7gLDVcxcfU9DGmIgNV2q7JcMCnCfX8w49mLw3GgVhGTFcgsREVEoPOH+Mi10eRfmlfp98MhzL2pRAlsFczrBuOEJzuIE7cvYhf5cWiSCMBHObEUgY0D9ABNb9Ej6l0DJmpgoccnNoo80uSj7dVwb060tXlUBQYIBlf2qRoxWRgyBagczaCr/2SkCxd0OZ+oCrRRvo9/f0WrqrWhtohFo9IV0ZzZhQa4rduW8FHNQJ33BsSgEaCfmFn5IuD3Bv1RdaPm/XXJ6Q4QKHIR7anVpa067UTl+FY8+Gaw+QGE+CcOoR2/trBaceLpoPu3dUoeg19VcZSMleUQMyRmfgrZaGkgwCbLnE9yRTiblyBXJgLmLGb5T8qrFMzMdFZddjx/GzlbaBni53tpqJ7Y1HDSKsaWA4BOcOD8/Y6TF6NnN3W5vMfgoRcc4OCSaHwX+ChRj1Lv5Va4WyWpQBFj8t8mc0fcYQbOhNpa88XjfV6DHxH3Q4v0L4A1mvlOxgfBD9XvtH9Rru6bQRBZLjMyZxrnMgY2FBECqE/E4cbtlmHhek63NxrrAu4kSx+aN//fpOkD/7GQr8Sduc0rx4YwHHmrrUQS6wFf3Y7JFTLy0zCfCrUi/Co=" />
+                    <div id="ctl00_divUser" style="float: right; margin-right: 16px;">
+                        <a href="?view=user">
+                            <span id="ctl00_lblLogIn" class="label label-success">quochahe176695</span></a> | <a href="?logout=true" class="label label-success">logout</a> |
+                <span id="ctl00_lblCampusName" class="label label-success"> CAMPUS: FPTU-Hòa Lạc</span>
+                    </div>
+                    <ol class="breadcrumb">
+                        <li>
+                            <span id="ctl00_lblNavigation"><a href='../Student.aspx'>Home</a>&nbsp;|&nbsp;<b>View Schedule</b></span></li>
+                    </ol>
+                    <table>
+                        <tr style="border-bottom: 0 none">
+                            <td>
+                                <div>
+                                    
+    <style>
+        div.online-indicator {
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            margin-right: 5px;
+  
+            background-color: #0fcc45;
+            border-radius: 50%;
+  
+            position: relative;
+        }
+        span.blink {
+            display: block;
+            width: 15px;
+            height: 15px;
+  
+            background-color: #0fcc45;
+            opacity: 0.7;
+            border-radius: 50%;
+  
+            animation: blink 1s linear infinite;
+        }
+
+        h3.online-text {
+            display: inline;
+  
+            font-family: 'Rubik', sans-serif;
+            font-weight: 400;
+            text-shadow: 0px 3px 6px rgba(150, 150, 150, 0.2);
+  
+            position: relative;
+            cursor: pointer;
+        }
+
+        /*Animations*/
+
+        @keyframes blink {
+            100% { transform: scale(2, 2); 
+                opacity: 0;
+            }
+        }
+    </style>
+    <h2>Activities for
+        <span id="ctl00_mainContent_lblStudent">QuocHAHE176695 (Hoàng Anh Quốc)</span></h2>
+    <p>
+        <b>Note</b>: These activities do not include extra-curriculum activities, such as
+        club activities ...
+    </p>
+    <p>
+        <b>Chú thích</b>: Các hoạt động trong bảng dưới không bao gồm hoạt động ngoại khóa,
+        ví dụ như hoạt động câu lạc bộ ...
+    </p>
+    <div id="ctl00_mainContent_ghichu">
+        <p>
+            Các phòng bắt đầu bằng AL thuộc tòa nhà Alpha. VD: AL...<br />
+            Các phòng bắt đầu bằng BE thuộc tòa nhà Beta. VD: BE,..<br />
+            Các phòng bắt đầu bằng G thuộc tòa nhà Gamma. VD: G201,...<br />
+            Các phòng tập bằng đầu bằng R thuộc khu vực sân tập Vovinam.<br/>
+            Các phòng bắt đầu bằng DE thuộc tòa nhà Delta. VD: DE,..
+
+        </p>
+    </div>
+    <table>
+        <thead>
+            <tr>
+
+                <th rowspan="2">
+                    <span class="auto-style1"><strong>Year</strong></span>
+                    <select name="ctl00$mainContent$drpYear" id="ctl00_mainContent_drpYear">
+	<option value="2019">2019</option>
+	<option value="2020">2020</option>
+	<option value="2021">2021</option>
+	<option selected="selected" value="2022">2022</option>
+	<option value="2023">2023</option>
+
+</select>
+                    <br />
+                    Week
+                    <select name="ctl00$mainContent$drpSelectWeek" id="ctl00_mainContent_drpSelectWeek">
+	<option value="1">03/01 To 09/01</option>
+	<option value="2">10/01 To 16/01</option>
+	<option value="3">17/01 To 23/01</option>
+	<option value="4">24/01 To 30/01</option>
+	<option value="5">31/01 To 06/02</option>
+	<option value="6">07/02 To 13/02</option>
+	<option value="7">14/02 To 20/02</option>
+	<option value="8">21/02 To 27/02</option>
+	<option value="9">28/02 To 06/03</option>
+	<option value="10">07/03 To 13/03</option>
+	<option value="11">14/03 To 20/03</option>
+	<option selected="selected" value="12">21/03 To 27/03</option>
+	<option value="13">28/03 To 03/04</option>
+	<option value="14">04/04 To 10/04</option>
+	<option value="15">11/04 To 17/04</option>
+	<option value="16">18/04 To 24/04</option>
+	<option value="17">25/04 To 01/05</option>
+	<option value="18">02/05 To 08/05</option>
+	<option value="19">09/05 To 15/05</option>
+	<option value="20">16/05 To 22/05</option>
+	<option value="21">23/05 To 29/05</option>
+	<option value="22">30/05 To 05/06</option>
+	<option value="23">06/06 To 12/06</option>
+	<option value="24">13/06 To 19/06</option>
+	<option value="25">20/06 To 26/06</option>
+	<option value="26">27/06 To 03/07</option>
+	<option value="27">04/07 To 10/07</option>
+	<option value="28">11/07 To 17/07</option>
+	<option value="29">18/07 To 24/07</option>
+	<option value="30">25/07 To 31/07</option>
+	<option value="31">01/08 To 07/08</option>
+	<option value="32">08/08 To 14/08</option>
+	<option value="33">15/08 To 21/08</option>
+	<option value="34">22/08 To 28/08</option>
+	<option value="35">29/08 To 04/09</option>
+	<option value="36">05/09 To 11/09</option>
+	<option value="37">12/09 To 18/09</option>
+	<option value="38">19/09 To 25/09</option>
+	<option value="39">26/09 To 02/10</option>
+	<option value="40">03/10 To 09/10</option>
+	<option value="41">10/10 To 16/10</option>
+	<option value="42">17/10 To 23/10</option>
+	<option value="43">24/10 To 30/10</option>
+	<option value="44">31/10 To 06/11</option>
+	<option value="45">07/11 To 13/11</option>
+	<option value="46">14/11 To 20/11</option>
+	<option value="47">21/11 To 27/11</option>
+	<option value="48">28/11 To 04/12</option>
+	<option value="49">05/12 To 11/12</option>
+	<option value="50">12/12 To 18/12</option>
+	<option value="51">19/12 To 25/12</option>
+	<option value="52">26/12 To 01/01</option>
+
+</select>
+                </th>
+
+                <div id="ctl00_mainContent_divNameDay"><th  align='center'>Mon</th><th  align='center'>Tue</th><th  align='center'>Wed</th><th  align='center'>Thu</th><th  align='center'>Fri</th><th  align='center'>Sat</th><th  align='center'>Sun</th></div>
+            </tr>
+            <tr>
+                <div id="ctl00_mainContent_divShowDate"><th  align='center'>21/03</th><th  align='center'>22/03</th><th  align='center'>23/03</th><th  align='center'>24/03</th><th  align='center'>25/03</th><th  align='center'>26/03</th><th  align='center'>27/03</th></div>
+                
+            </tr>
+        </thead>
+        <tbody>
+            <div id="ctl00_mainContent_divContent"><tr><td>Slot 1 </td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>Slot 2 </td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>Slot 3 </td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>Slot 4 </td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>Slot 5 </td><td><a href='../Schedule/ActivityDetail.aspx?id=882721'>VOV124-<a class='label label-warning' href='http://flm.fpt.edu.vn/gui/role/guest/ListScheduleSyllabus?subjectCode=rK6ucUzIJhVNxGpmk7Oryg==&SessionNo=RkibGEES9MerevVCVn72iQ==' target='_blank'>View Materials</a><br/> at R22 <a > <br/>(<font color=Green>attended</font>)<br/></td><td><a href='../Schedule/ActivityDetail.aspx?id=882722'>VOV124-<a class='label label-warning' href='http://flm.fpt.edu.vn/gui/role/guest/ListScheduleSyllabus?subjectCode=rK6ucUzIJhVNxGpmk7Oryg==&SessionNo=i10jhUQP8Hxzar+4GVfBTw==' target='_blank'>View Materials</a><br/> at R22 <a > <br/>(<font color=Green>attended</font>)<br/></td><td><a href='../Schedule/ActivityDetail.aspx?id=882723'>VOV124-<a class='label label-warning' href='http://flm.fpt.edu.vn/gui/role/guest/ListScheduleSyllabus?subjectCode=rK6ucUzIJhVNxGpmk7Oryg==&SessionNo=iU6XsBAm8gKSVq0zGwPi7A==' target='_blank'>View Materials</a><br/> at R22 <a > <br/>(<font color=Green>attended</font>)<br/></td><td><a href='../Schedule/ActivityDetail.aspx?id=882724'>VOV124-<a class='label label-warning' href='http://flm.fpt.edu.vn/gui/role/guest/ListScheduleSyllabus?subjectCode=rK6ucUzIJhVNxGpmk7Oryg==&SessionNo=8lAXSU4lCLLUZX7/1fL97g==' target='_blank'>View Materials</a><br/> at R22 <a > <br/>(<font color=Green>attended</font>)<br/></td><td><a href='../Schedule/ActivityDetail.aspx?id=882741'>VOV124-<a class='label label-warning' href='http://flm.fpt.edu.vn/gui/role/guest/ListScheduleSyllabus?subjectCode=rK6ucUzIJhVNxGpmk7Oryg==&SessionNo=YPV7s0LusQpyhA7BSGov9w==' target='_blank'>View Materials</a><br/> at R22 <a > <br/>(<font color=Green>attended</font>)<br/></td><td>-</td><td>-</td></tr><tr><td>Slot 6 </td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>Slot 7 </td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>Slot 8 </td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr></div>
+        </tbody>
+    </table>
+    <p>
+        <b>More note / Chú thích thêm</b>:
+    </p>
+    <div id="ctl00_mainContent_divfoot"><ul><li>(<font color='green'>attended</font>): QuocHAHE176695 had attended this activity / Hoàng Anh Quốc đã tham gia hoạt động này</li><li>(<font color='red'>absent</font>): QuocHAHE176695 had NOT attended this activity / Hoàng Anh Quốc đã vắng mặt buổi này</li>   <li>(-): no data was given / chưa có dữ liệu</li> </ul></div>
+    <p>
+    </p>
+    
+
+                                </div>
+                            </td>
+                        </tr>
+                        <tr style="border-bottom: 0 none">
+                            <td>
+                                <br />
+
+                                <table width="100%" style="border: 1px solid transparent;" id="cssTable">
+
+                                    <tr>
+                                        <td>
+                                            <div id="ctl00_divSupport">
+                                                <br />
+                                                <b>Mọi góp ý, thắc mắc xin liên hệ: </b><span style="color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: 13.333333969116211px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); display: inline !important; float: none;">Phòng dịch vụ sinh viên</span>: Email: <a href="mailto:dichvusinhvien@fe.edu.vn">dichvusinhvien@fe.edu.vn</a>.
+        Điện thoại: <span class="style1"
+            style="color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: 13.333333969116211px; font-style: normal; font-variant: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); display: inline !important; float: none;">(024)7308.13.13 </span>
+                                                <br />
+
+                                            </div>
+
+                                            
+                                            
+                                              
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p style="text-align: center">
+                                                © Powered by <a href="http://fpt.edu.vn" target="_blank">FPT University</a>&nbsp;|&nbsp;
+        <a href="http://cms.fpt.edu.vn/" target="_blank">CMS</a>&nbsp;|&nbsp; <a href="http://library.fpt.edu.vn" target="_blank">library</a>&nbsp;|&nbsp; <a href="http://library.books24x7.com" target="_blank">books24x7</a>
+                                                <span id="ctl00_lblHelpdesk"></span>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </table>
+
+                            </td>
+                        </tr>
+                    </table>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-10421012-13']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+
+    <script type="text/javascript">
+        var isClose = false;
+
+        //this code will handle the F5 or Ctrl+F5 key
+        //need to handle more cases like ctrl+R whose codes are not listed here
+        document.onkeydown = checkKeycode;
+        function checkKeycode(e) {
+            var keycode;
+            if (window.event)
+                keycode = window.event.keyCode;
+            else if (e)
+                keycode = e.which;
+            if (keycode == 116) {
+                isClose = true;
+            }
+        }
+        function somefunction() {
+            isClose = true;
+        }
+
+        //<![CDATA[
+
+        function bodyUnload() {
+
+            if (!isClose) {
+                var request = GetRequest();
+                request.open("GET", "LogOut.aspx", true);
+                request.send();
+            }
+        }
+        function GetRequest() {
+            var request = null;
+            if (window.XMLHttpRequest) {
+                //incase of IE7,FF, Opera and Safari browser
+                request = new XMLHttpRequest();
+            }
+            else {
+                //for old browser like IE 6.x and IE 5.x
+                request = new ActiveXObject('MSXML2.XMLHTTP.3.0');
+            }
+            return request;
+        }
+        //]]>
+    </script>
+
+</body>
+</html>

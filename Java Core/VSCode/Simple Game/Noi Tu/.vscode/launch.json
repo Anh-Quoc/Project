@@ -1,0 +1,42 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch MainGame",
+            "request": "launch",
+            "mainClass": "MainGame",
+            "projectName": "Noi Tu_788ad9c0"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MainGame",
+            "request": "launch",
+            "mainClass": "MainGame",
+            "projectName": "Noi Tu_84885a79"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-MainGame<Noi Tu_17383d21>",
+            "request": "launch",
+            "mainClass": "MainGame",
+            "projectName": "Noi Tu_17383d21"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-TachTu<Noi Tu_17383d21>",
+            "request": "launch",
+            "mainClass": "TachTu",
+            "projectName": "Noi Tu_17383d21"
+        }
+    ]
+}

@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Get-FCode-From-J2Team:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Get_FCode_From_J2Team_jar</output-path>
+    <root id="archive" name="Get-FCode-From-J2Team.jar">
+      <element id="module-output" name="Get-FCode-From-J2Team" />
+      <element id="library" level="project" name="jsoup-1.13.1" />
+    </root>
+  </artifact>
+</component>

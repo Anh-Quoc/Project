@@ -1,0 +1,12 @@
+public class DataType {
+    public static void main(String[] args) {
+        byte myNumByte = 100;
+        short myNumShort = 5000;
+        int myNumInt = 100000;
+        long myNumLong = 15000000000L;
+        float myNumFloat = 5.75f;
+        double myNumDouble = 19.99d;
+        char myGrade = 'B';
+        String greeting = "Hello World";
+    }
+}

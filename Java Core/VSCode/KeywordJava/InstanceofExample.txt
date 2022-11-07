@@ -1,0 +1,11 @@
+class MyClass {
+
+}
+
+class InstanceofExample {
+    public static void main(String[] args) {
+        MyClass myObj = new MyClass();
+        System.out.println(myObj instanceof MyClass);
+        // Output: true
+    }
+}

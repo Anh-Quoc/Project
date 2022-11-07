@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="Get-FCode-From-J2Team-V2">
+    <output-path>$PROJECT_DIR$/out/artifacts/Get_FCode_From_J2Team_V2</output-path>
+    <root id="root">
+      <element id="archive" name="Get_FCode_From_J2Team_V2.jar">
+        <element id="module-output" name="Get-FCode-From-J2Team-V2" />
+      </element>
+    </root>
+  </artifact>
+</component>

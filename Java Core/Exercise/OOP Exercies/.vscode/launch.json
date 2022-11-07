@@ -1,0 +1,35 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Ex1Main<Ojbect Oriented Programing Exercies_c8d312>",
+            "request": "launch",
+            "mainClass": "Ex1.Ex1Main",
+            "projectName": "Ojbect Oriented Programing Exercies_c8d312"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Ex2Main<Ojbect Oriented Programing Exercies_c8d312>",
+            "request": "launch",
+            "mainClass": "Ex2.Ex2Main",
+            "projectName": "Ojbect Oriented Programing Exercies_c8d312"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Ex3Main<Ojbect Oriented Programing Exercies_c8d312>",
+            "request": "launch",
+            "mainClass": "Ex3.Ex3Main",
+            "projectName": "Ojbect Oriented Programing Exercies_c8d312"
+        }
+    ]
+}

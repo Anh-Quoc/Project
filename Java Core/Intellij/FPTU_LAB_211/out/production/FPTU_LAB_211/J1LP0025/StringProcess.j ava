@@ -1,0 +1,109 @@
+//package J1LP0025;
+//
+//public class StringProcess {
+//
+//    static StringBuffer data = new StringBuffer("      kj    .aks  ,    hh\"   sadj    \"ha:sd   ");
+//    public static void main(String[] args) {
+//
+//        addSpaceAfterPunctuation();
+//        delete2Space();
+//        deleteSpaceInTheHeadAndTheEnd();
+//        deleteSpaceBeforePunctuation();
+//        uppercaseFirstCharacterAfterDotAndPhrases();
+//        deleteSpaceBeforeAfterQuotes();
+//        addDotAtTheEnd();
+//        System.out.println(data.toString());
+//
+//        test();
+//    }
+//
+//
+//    public static void test(){
+//        String a1 = "aaa";
+//        String a2 = "aaa";
+//        a1 = a1.replace("aa", "b");
+//        System.out.println(a1);
+//        a2 = a2.replaceAll("aa", "b");
+//        System.out.println(a2);
+//    }
+//
+//
+//    public static void addSpaceAfterPunctuation(){
+//        String[] punctuationArr = {".", ",", ":",};
+//        for(String punctuation : punctuationArr){
+//            while (!String.valueOf(data.charAt(data.indexOf(punctuation) + 1)).equals(" ")){
+//                data.insert(data.indexOf(punctuation) + 1, " ");
+//            }
+//        }
+//
+//    }
+//
+//    public static void delete2Space(){
+//        while(data.indexOf("  ") != -1){
+//            data.replace(data.indexOf("  "), data.indexOf("  ") + 2, " ");
+//        }
+//    }
+//
+//    public static void deleteSpaceBeforePunctuation(){
+//        String[] punctuationArr = {".", ",", ":"};
+//        for(String punctuation : punctuationArr){
+//            while (data.indexOf(" " + punctuation) != -1){
+//                data.replace(data.indexOf(" " + punctuation), data.indexOf(" " + punctuation) + 2, punctuation);
+//            }
+//        }
+//    }
+//
+//    public static void deleteSpaceInTheHeadAndTheEnd(){
+//        if(data.toString().startsWith(" ")){
+//            data.delete(0,1);
+//        }
+//        if(data.toString().endsWith(" ")){
+//            data.delete(data.length() - 1, data.length());
+//        }
+//    }
+//
+//    public static void deleteSpaceBeforeAfterQuotes(){
+//        String[] dataArr = data.toString().split("\"");
+//        StringBuffer newData = new StringBuffer();
+//        boolean openQuotes = true;
+//        for(String sentence : dataArr){
+//            if(openQuotes){
+//                newData.append(sentence).append("\"");
+//                openQuotes = false;
+//            } else {
+//                newData.append(sentence.trim()).append("\"");
+//                openQuotes = true;
+//            }
+//
+//        }
+//        data = newData;
+//    }
+//
+//
+//    public static void uppercaseFirstCharacterFirstLine(){
+//
+//
+//    }
+//
+//    public static void uppercaseFirstCharacterAfterDotAndPhrases(){
+//        String[] dotAndColon = {".", ":"};
+//        String[] letter = {"q", "w", "e", "r", "t", "y", "u", "i", "o", "p",
+//                            "a", "s", "d", "f", "g", "h", "j", "k", "l",
+//                            "z", "x", "c", "v", "b", "n", "m"};
+//        for(String punctuation : dotAndColon){
+//            for(String chr : letter){
+//                String lowCase = punctuation + " " + chr;
+//                while (data.indexOf(lowCase) != -1){
+//                    data.replace(data.indexOf(lowCase), data.indexOf(lowCase) + 3, lowCase.toUpperCase());
+//                }
+//            }
+//        }
+//
+//    }
+//
+//    public static void addDotAtTheEnd(){
+//        if(!data.toString().endsWith(".")){
+//            data.append(".");
+//        }
+//    }
+//}
