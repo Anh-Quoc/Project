@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="button_answer_style">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/button_choose_shape</item>
+        <item name="backgroundTint">@color/purple_200</item>
+        <item name="android:textAlignment">textStart</item>
+    </style>
+
+</resources>

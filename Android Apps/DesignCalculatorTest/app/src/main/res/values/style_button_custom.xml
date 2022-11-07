@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="button_custom" parent="">
+        <item name="cornerSize">70%</item>
+        <item name="android:radius">50dp</item>
+        <item name="android:backgroundTint">#7C7C7C</item>
+        <item name="rippleColor">#FF0000</item>
+        <item name="android:textColor">#FDFFFF</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>

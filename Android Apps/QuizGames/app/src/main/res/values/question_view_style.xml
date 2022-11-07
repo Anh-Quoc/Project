@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="question_view_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_span">2</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">#FFFF</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:background">@drawable/button_choose_shape</item>
+
+    </style>
+</resources>

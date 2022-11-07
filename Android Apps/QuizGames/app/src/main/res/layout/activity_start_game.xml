@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".start_Game"
+    android:stretchColumns="*"
+    android:background="@drawable/background_music">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/textCorrectAnswer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_span="2"
+            android:text="Scores: 0"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/rowTextQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textQuestion"
+            style="@style/question_view_style"
+            android:layout_height="499dp"
+            android:gravity="center"
+            android:text="Question" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <Button
+            android:id="@+id/btn_Option_A"
+            style="@style/button_answer_style"
+            android:text="A"
+            android:onClick="clickOption_A"
+            tools:ignore="UsingOnClickInXml" />
+
+        <Button
+            android:id="@+id/btn_Option_B"
+            style="@style/button_answer_style"
+            android:text="B"
+            android:onClick="clickOption_B"
+            tools:ignore="UsingOnClickInXml" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <Button
+            android:id="@+id/btn_Option_C"
+            style="@style/button_answer_style"
+            android:text="C"
+            android:onClick="clickOption_C"/>
+
+        <Button
+            android:id="@+id/btn_Option_D"
+            style="@style/button_answer_style"
+            android:text="D"
+            android:onClick="clickOption_D"/>
+    </TableRow>
+
+</TableLayout>
